@@ -53,14 +53,14 @@ const services = [
     title: 'Backend Developer',
     icon: backend,
   },
-  {
-    title: 'UI/UX Design',
-    icon: ux,
-  },
-  {
-    title: 'Software Prototyping',
-    icon: prototyping,
-  },
+  // {
+  //   title: 'UI/UX Design',
+  //   icon: ux,
+  // },
+  // {
+  //   title: 'Software Prototyping',
+  //   icon: prototyping,
+  // },
 ];
 
 const technologies = [
