@@ -38,11 +38,7 @@ export const navLinks = [
   {
     id: 'projects',
     title: 'Projects',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
-  },
+  }
 ];
 
 const services = [
@@ -133,33 +129,40 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Software Engineer Intern',
+    company_name: 'Nadeshiko Inc',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'June 2020 - March 2021',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'English Tutor',
+    company_name: 'Catal Inc',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'March 2021 - Present',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'Undergraduate student (Major in Computer Science)',
+    company_name: 'The University of British Columbia',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'September 2021 - Present',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Teaching Assistant (CPSC 121 Models of Computation)',
+    company_name: 'UBC Department of Computer Science',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'January 2023 - April 2023',
   },
+  {
+    title: 'Software Developer',
+    company_name: 'UBC Cloud Innovation Centre powered by AWS',
+    icon: dcc,
+    iconBg: '#333333',
+    date: 'September 2023 - Present',
+  }
 ];
 
 const projects = [

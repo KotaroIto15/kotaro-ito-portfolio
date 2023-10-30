@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap } from '../assets';
+import { bwmap, worldmap } from '../assets';
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
               Third year Computer Science student at <br className="sm:block hidden" />
-              the University of British Columbia.
+              the University of British Columbia (UBC)
             </p>
           </div>
           <div
