@@ -3,8 +3,9 @@ import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
 
-import logo from './logo/logo-black.png';
-import logotext from './logo/logo-text-black.png';
+import linkedin from './logo/linkedin.svg';
+import github_logo from './logo/github.svg';
+import gmail from './logo/gmail.svg';
 
 import shaq from './personal/shaq.png';
 
@@ -55,8 +56,9 @@ export {
   nairobi,
   whiteabstract,
   worldmap,
-  logo,
-  logotext,
+  linkedin,
+  github_logo,
+  gmail,
   shaq,
   backend,
   ux,

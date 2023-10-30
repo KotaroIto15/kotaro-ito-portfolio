@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { close, menu, logo, logotext } from '../assets';
+import { close, menu, linkedin, github_logo, gmail } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -13,27 +12,30 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-2 fixed 
       top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive('');
-            window.scrollTo(0, 0);
-          }}>
-          <img
-            src={logo} // your logo comes here
-            alt="logo"
-            className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
-          />
 
-          {/* if you have text you want besides your logo it comes here.
-          Otherwise delete this if you don't need it. */}
-          <img
-            src={logotext}
-            alt="logo"
-            className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
-          />
-        </Link>
+        <div className='flex items-center gap-2'>
+          <a href="https://www.linkedin.com/in/kotaro-ito-839037265/" target='_blank'>
+            <img 
+              src={linkedin}  
+              className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
+            />
+          </a>
+
+          <a href="https://github.com/KotaroIto15" target='_blank'>
+            <img 
+              src={github_logo}
+              className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain" 
+            />
+          </a>
+
+          <a href="mailto:agkito34@gmail.com" target='_blank'>
+            <img 
+              src={gmail}
+              className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
+            />
+          </a>
+        </div>
+        
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {navLinks.map((nav) => (
             <li
