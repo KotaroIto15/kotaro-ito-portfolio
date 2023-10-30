@@ -26,18 +26,20 @@ import sendHover from './icons/sendHover.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
-import figma from './tech/figma.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
 import nodejs from './tech/nodejs.png';
 import reactjs from './tech/reactjs.png';
-import redux from './tech/redux.png';
-import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
-import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
-import rubyrails from './tech/rubyrails.png';
+import php from './tech/php.svg';
+import python from './tech/python.svg';
+import flask from './tech/flask.png';
+import java from './tech/java.svg';
+import clang from './tech/clang.png';
+import cpp from './tech/c-plusplus.svg';
+import aws from './tech/aws.svg';
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
@@ -76,17 +78,12 @@ export {
   sendHover,
   css,
   docker,
-  figma,
   git,
-  graphql,
   html,
   javascript,
   nodejs,
   postgresql,
-  rubyrails,
   reactjs,
-  redux,
-  tailwind,
   typescript,
   komikult,
   leaderboard,
@@ -98,4 +95,11 @@ export {
   dcc,
   kelhel,
   microverse,
+  php,
+  python,
+  flask,
+  java,
+  clang,
+  cpp,
+  aws,
 };

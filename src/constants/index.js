@@ -8,15 +8,17 @@ import {
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   git,
-  figma,
   docker,
   postgresql,
-  rubyrails,
-  graphql,
+  php,
+  python,
+  flask,
+  java,
+  clang,
+  cpp,
+  aws,
   komikult,
   leaderboard,
   math,
@@ -85,24 +87,32 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
     name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: 'Rails',
-    icon: rubyrails,
+    name: 'Python',
+    icon: python,
   },
   {
-    name: 'graphql',
-    icon: graphql,
+    name: "Flask",
+    icon: flask,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "C language",
+    icon: clang,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "PHP",
+    icon: php,
   },
   {
     name: 'postgresql',
@@ -113,13 +123,13 @@ const technologies = [
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
-  },
-  {
     name: 'docker',
     icon: docker,
   },
+  {
+    name: 'Amazon Web Services',
+    icon: aws,
+  }
 ];
 
 const experiences = [
