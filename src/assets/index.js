@@ -7,8 +7,6 @@ import linkedin from './logo/linkedin.svg';
 import github_logo from './logo/github.svg';
 import gmail from './logo/gmail.svg';
 
-import shaq from './personal/shaq.png';
-
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
 import frontend from './icons/frontend.png';
@@ -46,12 +44,11 @@ import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
-import komikult from './projects/komikult.png';
-import leaderboard from './projects/leaderboard.png';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
-import nyeusi from './projects/nyeusi.png';
-import space from './projects/space-hub.png';
+import tic_tac_toe from './projects/tic_tac_toe.png';
+import squad_builder from './projects/squad_builder.png';
+import workout_manager from './projects/workout_manager.png';
+import clicker_empire_game from './projects/clicker_empire_game.png';
+import discord from './projects/discord.png';
 
 export {
   bwmap,
@@ -61,7 +58,6 @@ export {
   linkedin,
   github_logo,
   gmail,
-  shaq,
   backend,
   ux,
   frontend,
@@ -85,12 +81,6 @@ export {
   postgresql,
   reactjs,
   typescript,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
   coverhunt,
   dcc,
   kelhel,
@@ -102,4 +92,9 @@ export {
   clang,
   cpp,
   aws,
+  tic_tac_toe,
+  squad_builder,
+  workout_manager,
+  clicker_empire_game,
+  discord,
 };
