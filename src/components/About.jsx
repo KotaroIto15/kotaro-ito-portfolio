@@ -1,11 +1,13 @@
-import React from 'react';
+import { React, useContext } from 'react';
+import { LanguageContext } from '../Context';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { services } from '../constants';
+import { services, introduction } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, icon, title }) => {
+
   return (
     <motion.div
       variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
@@ -27,6 +29,9 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
@@ -37,14 +42,12 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        現在はカナダにあるブリティッシュコロンビア大学の学部3年生で、コンピュータサイエンスを専攻しています。
-        フロントエンド、バックエンド開発に興味があり、さまざまな言語を使用して個人開発やチーム開発に取り組んでいます。
-        自分自身がソフトウェアデベロッパーとして成長でき、さらに自分の知識や経験を活用して会社に還元・貢献できるインターンの環境を探しています。
+        {introduction[language]}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={service.title} index={index} icon={service.icon} title={service[language]} />
         ))}
       </div>
     </div>

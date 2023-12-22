@@ -4,44 +4,51 @@ import {
 } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
+import { LanguageContext } from '../Context';
+import { useContext } from 'react';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
 
-const ExperienceCard = ({ experience }) => (
-  <VerticalTimelineElement
-    contentStyle={{
-      background: '#eaeaec',
-      color: '#292929',
-      boxShadow:
-        'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-    }}
-    contentArrowStyle={{
-      borderRight: '7px solid  #232631',
-    }}
-    date={
-      <div>
-        <h3 className="text-dim text-[18px] font-bold font-beckman">
-          {experience.date}
-        </h3>
-      </div>
-    }
-    iconStyle={{ background: experience.iconBg }}
+const ExperienceCard = ({ experience }) => {
+
+  const { language } = useContext(LanguageContext);
+
+  return (
+    <VerticalTimelineElement
+      contentStyle={{
+        background: '#eaeaec',
+        color: '#292929',
+        boxShadow:
+          'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+      }}
+      contentArrowStyle={{
+        borderRight: '7px solid  #232631',
+      }}
+      date={
+        <div>
+          <h3 className="text-dim text-[18px] font-bold font-beckman">
+            {experience.date[language]}
+          </h3>
+        </div>
+      }
+      iconStyle={{ background: experience.iconBg }}
     >
-    <div>
-      <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
-        {experience.title}
-      </h3>
-      <p
-        className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
-        style={{ margin: 0 }}>
-        {experience.company_name}
-      </p>
-    </div>
-  </VerticalTimelineElement>
-);
+      <div>
+        <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
+          {experience.title[language]}
+        </h3>
+        <p
+          className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
+          style={{ margin: 0 }}>
+          {experience.company_name[language]}
+        </p>
+      </div>
+    </VerticalTimelineElement>
+  );
+};
 
 const Experience = () => {
   return (

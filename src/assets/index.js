@@ -6,6 +6,8 @@ import worldmap from './backgrounds/world-map.png';
 import linkedin from './logo/linkedin.svg';
 import github_logo from './logo/github.svg';
 import gmail from './logo/gmail.svg';
+import jp from './logo/jp_flag.svg';
+import en from './logo/en_flag.svg';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';
@@ -58,6 +60,8 @@ export {
   linkedin,
   github_logo,
   gmail,
+  jp,
+  en,
   backend,
   ux,
   frontend,

@@ -1,8 +1,6 @@
 import {
   frontend,
   backend,
-  ux,
-  prototyping,
   javascript,
   typescript,
   html,
@@ -41,23 +39,28 @@ export const navLinks = [
   }
 ];
 
+const introduction = {
+  jp: `現在はカナダにあるブリティッシュコロンビア大学の学部3年生で、コンピュータサイエンスを専攻しています。
+  フロントエンド、バックエンド開発に興味があり、さまざまな言語を使用して個人開発やチーム開発に取り組んでいます。
+  自分自身がソフトウェアデベロッパーとして成長でき、さらに自分の知識や経験を活用して会社に還元・貢献できるインターンの環境を探しています。`,
+  en: `I am a third year Computer Science student at the University of British Columbia in Canada.
+  I am interested in both frontend and backend development, and I am passionate about personal/team development in a variety of programming languages.
+  I am looking for the internship environment in which I can grow as a software developer, and to which I can contribute with my technical knowledge and experiences.`
+};
+
 const services = [
   {
+    jp: 'フロントエンドデベロッパー',
+    en: 'Frontend Developer',
     title: 'Frontend Developer',
     icon: frontend,
   },
   {
+    jp: 'バックエンドデベロッパー',
+    en: 'Backend Developer',
     title: 'Backend Developer',
     icon: backend,
   },
-  // {
-  //   title: 'UI/UX Design',
-  //   icon: ux,
-  // },
-  // {
-  //   title: 'Software Prototyping',
-  //   icon: prototyping,
-  // },
 ];
 
 const technologies = [
@@ -129,47 +132,101 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Software Engineer Intern',
-    company_name: 'Nadeshiko Inc',
+    title: {
+      jp: 'ソフトウェアエンジニアインターン',
+      en: 'Software Engineer Intern'
+    },
+    company_name: {
+      jp: '株式会社なでしこ',
+      en: 'Nadeshiko Inc'
+    },
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'June 2020 - March 2021',
+    date: {
+      jp: '2020/06 - 2021/03',
+      en: 'June 2020 - March 2021'
+    },
   },
   {
-    title: 'English Tutor',
-    company_name: 'Catal Inc',
+    title: {
+      jp: '英語教師',
+      en: 'English Tutor'
+    },
+    company_name: {
+      jp: '株式会社キャタル',
+      en: 'Catal Inc',
+    },
     icon: microverse,
     iconBg: '#333333',
-    date: 'March 2021 - Present',
+    date: {
+      jp: '2021/03 - 現在',
+      en: 'March 2021 - Present',
+    }
   },
   {
-    title: 'Undergraduate student (Major in Computer Science)',
-    company_name: 'The University of British Columbia',
+    title: {
+      jp: '学部生 （専攻：コンピュータサイエンス）',
+      en: 'Undergraduate student (Major in Computer Science)'
+    },
+    company_name: {
+      jp: 'ブリティッシュコロンビア大学',
+      en: 'The University of British Columbia'
+    },
     icon: kelhel,
     iconBg: '#333333',
-    date: 'September 2021 - Present',
+    date: {
+      jp: '2021/09 - 現在',
+      en: 'September 2021 - Present'
+    },
   },
   {
-    title: 'Teaching Assistant (CPSC 121 Models of Computation)',
-    company_name: 'UBC Department of Computer Science',
+    title: {
+      jp: 'ティーチングアシスタント（CPSC121: ブール代数、論理回路、有限オートマンなど）',
+      en: 'Teaching Assistant (CPSC 121 Models of Computation)'
+    },
+    company_name: {
+      jp: 'ブリティッシュコロンビア大学コンピュータサイエンス学科',
+      en: 'UBC Department of Computer Science'
+    },
     icon: dcc,
     iconBg: '#333333',
-    date: 'January 2023 - April 2023',
+    date: {
+      jp: '2023/01 - 2023/04',
+      en: 'January 2023 - April 2023'
+    },
   },
   {
-    title: 'Software Developer',
-    company_name: 'UBC Cloud Innovation Centre powered by AWS',
+    title: {
+      jp: 'ソフトウェアエンジニアインターン',
+      en: 'Software Developer Intern'
+    },
+    company_name: {
+      jp: 'UBC Cloud Innovation Centre powered by AWS',
+      en: 'UBC Cloud Innovation Centre powered by AWS'
+    },
     icon: dcc,
     iconBg: '#333333',
-    date: 'September 2023 - Present',
+    date: {
+      jp: '2023/09 - 現在',
+      en: 'September 2023 - Present'
+    },
   }
 ];
+
+const projects_overview = {
+  jp: `これまでに作成してきたプロジェクトの一覧です。
+  チーム開発や個人開発を通して、主にJava, JavaScript, Pythonとそれらのフレームワークを使用しながら、
+  フロントエンド・バックエンドともに開発経験を積むことができました。`,
+  en: `This is a list of projects I have created so far.
+   Through team development and personal development, I have accumulated experience in developing both frontend and backend using Java, JavaScript, and other frameworks.`
+};
 
 const projects = [
   {
     id: 'project-1',
     name: 'Tic Tac Toe',
-    description: 'チームプロジェクトの一環として開発したシンプルなOXゲーム。',
+    jp: 'チームプロジェクトの一環として開発したシンプルなOXゲーム。',
+    en: 'A simple Tic Tac Toe developed as a team project.',
     tags: [
       {
         name: 'HTML',
@@ -190,8 +247,8 @@ const projects = [
   {
     id: 'project-2',
     name: 'FIFA23 Squad Builder',
-    description:
-      'サッカーゲームFIFA23の選手データを使用し、好きなチーム編成をシミュレーションできるWebアプリケーション。',
+    jp: 'サッカーゲームFIFA23の選手データを使用し、好きなチーム編成をシミュレーションできるWebアプリケーション。',
+    en: 'A web application that simulates a squad formation using FIFA23 player data.',
     tags: [
       {
         name: 'ReactJS',
@@ -212,7 +269,8 @@ const projects = [
   {
     id: 'project-3',
     name: 'Workout Manager',
-    description: 'トレーニングスケジュールを管理し、トレーニング強度をモニタリングするアプリケーション。',
+    jp: 'トレーニングスケジュールを管理し、トレーニング強度をモニタリングするアプリケーション。',
+    en: 'An application that manages training schedules and monitors training intensity.',
     tags: [
       {
         name: 'Java',
@@ -233,7 +291,8 @@ const projects = [
   {
     id: 'project-4',
     name: 'Clicker Empire Game',
-    description: `商品を購入したり投資を行ったりしながら、資産を増やしていくことを目的としたゲーム。`,
+    jp: '商品を購入したり投資を行ったりしながら、資産を増やしていくことを目的としたゲーム。',
+    en: 'A game that aims to increase your assets by purchasing goods or investing in various assets.',
     tags: [
       {
         name: 'HTML',
@@ -254,8 +313,8 @@ const projects = [
   {
     id: 'project-5',
     name: 'Discord chat bot',
-    description:
-      'Discord上で、好きな都市の現在の天気を教えてくれるチャットボット。',
+    jp: 'Discord上で、好きな都市の現在の天気を教えてくれるチャットボット。',
+    en: 'A chat bot that provides the current weather in a city of your choice on Discord.',
     tags: [
       {
         name: 'Python',
@@ -271,4 +330,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, introduction, technologies, experiences, projects_overview, projects };

@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { LanguageContext } from '../Context';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
-import { github, pineapple, pineappleHover } from '../assets';
-import { projects } from '../constants';
+import { github } from '../assets';
+import { projects_overview, projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 
 const ProjectCard = ({
   id,
   name,
-  description,
   image,
   repo,
-  demo,
   index,
   active,
   handleClick,
+  description
 }) => {
   return (
     <motion.div
@@ -85,6 +85,7 @@ const ProjectCard = ({
 
 const Projects = () => {
   const [active, setActive] = useState('project-2');
+  const { language } = useContext(LanguageContext);
 
   return (
     <div className="-mt-[6rem]">
@@ -97,9 +98,7 @@ const Projects = () => {
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          これまでに作成してきたプロジェクトの一覧です。
-          チーム開発や個人開発を通して、主にJava, JavaScript, Pythonとそれらのフレームワークを使用しながら、
-          フロントエンド・バックエンドともに開発経験を積むことができました。
+          {projects_overview[language]}
         </motion.p>
       </div>
 
@@ -117,6 +116,7 @@ const Projects = () => {
               {...project}
               active={active}
               handleClick={setActive}
+              description={project[language]}
             />
           ))}
         </div>
